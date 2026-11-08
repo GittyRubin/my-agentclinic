@@ -3,7 +3,7 @@ import { Header } from './Header'
 import { Main } from './Main'
 import { Footer } from './Footer'
 
-type LayoutProps = {
+export type LayoutProps = {
   title: string
   children?: Child
 }
@@ -13,7 +13,7 @@ export const Layout = ({ title, children }: LayoutProps) => (
     <head>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>{title}</title>
+      <title>{title === 'AgentClinic' ? title : `${title} · AgentClinic`}</title>
       <link rel="stylesheet" href="/static/style.css" />
     </head>
     <body>

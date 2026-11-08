@@ -13,9 +13,9 @@ High-level implementation order, in very small phases. Each phase gets its own f
 
 Combined from the earlier phases 2–5 so the core clinic workflow ships together.
 
-- SQLite database set up, with seed data.
-- Agents: list and view agents.
-- Ailments: list ailments and link them to agents.
+- ✅ SQLite database set up, with seed data.
+- ✅ Agents: list and view agents.
+- ✅ Ailments: list ailments and link them to agents.
 - Therapies: list therapies and assign a therapy to an agent's ailment.
 - Appointments: book an appointment for an agent and list upcoming appointments.
 - Dashboard: one overview page for staff – agents, open ailments and upcoming appointments.
