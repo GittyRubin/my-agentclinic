@@ -2,6 +2,12 @@
 
 ## 2026-11-08
 
+- **MVP complete.**
+- Added therapies: a therapies page, and each diagnosed ailment now shows its therapy.
+- Added appointments: an upcoming list and a booking form that rejects past times, double bookings and unknown agents or therapies.
+- Added a staff dashboard with key numbers, agents in treatment and the next appointments.
+- Existing databases are upgraded automatically; sample appointments are created relative to today.
+- Fixed the appointments page overflowing on phones.
 - Added agents and ailments backed by SQLite (`node:sqlite`) with seed data.
 - New pages: agents list, agent detail with ailments, and ailments list with affected-agent counts.
 - Applied the orange and black brand colors, with status and severity badges.
