@@ -8,3 +8,5 @@ The phase is done and can be merged to `main` when all of these pass:
 4. `GET http://localhost:3000/` returns HTML that contains the `<h1>` "AgentClinic", a header, and a footer.
 5. `GET http://localhost:3000/static/style.css` returns the stylesheet.
 6. Opening `http://localhost:3000` in a browser shows a clean, styled page.
+7. `npm test` passes (all Vitest tests green).
+8. The page is responsive: no horizontal scrolling at 375px wide, and the header lays out in one row on desktop.

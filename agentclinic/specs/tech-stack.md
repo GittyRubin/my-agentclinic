@@ -19,11 +19,24 @@
 - Plain CSS served as a static file, with a shared layout (header, navigation, footer).
 - Responsive design that works in modern browsers.
 
+## Styling: responsive design
+
+- The web UI follows responsive design: mobile-first CSS, a `viewport` meta tag, fluid widths, and media queries for wider screens.
+- Every page must be usable on a phone (≈375px), a tablet, and a desktop.
+
+## Testing
+
+- **Vitest** for automated tests, in the `tests/` directory.
+- Route tests call the Hono app directly with `app.request()` – no running server needed.
+- `npm test` runs the suite once; `npm run test:watch` re-runs on change.
+- Every feature's `validation.md` must include passing `npm test`.
+
 ## Tooling
 
 - `npm` for dependencies and scripts.
-- `tsc` for type checking and builds.
+- `tsc` for type checking and builds (`npm run typecheck`).
 - `tsx` for running TypeScript in development.
+- `vitest` for tests (`npm test`).
 
 ## Why this stack
 

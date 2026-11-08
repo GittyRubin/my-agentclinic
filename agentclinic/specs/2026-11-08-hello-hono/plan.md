@@ -32,6 +32,17 @@
 16. Serve `static/` with `serveStatic` from `@hono/node-server/serve-static`.
 17. `Home.tsx` uses `<Layout>` and puts its content inside `<Main>`.
 
-## Group 6 – Verify
+## Group 6 – Tests
 
-18. Run every check in `validation.md`.
+18. Move the Hono app to `src/app.tsx` (exported), keep `src/index.tsx` for `serve()` only.
+19. Add Vitest and an `npm test` script.
+20. Write `tests/home.test.ts`: home page, layout parts, stylesheet link, static CSS, 404.
+
+## Group 7 – Responsive design
+
+21. Mobile-first CSS; header stacks on narrow screens, side by side from 640px.
+22. Fluid main width with comfortable padding on all screen sizes.
+
+## Group 8 – Verify
+
+23. Run every check in `validation.md`.
