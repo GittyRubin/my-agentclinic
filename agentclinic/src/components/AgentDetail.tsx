@@ -1,12 +1,14 @@
-import type { Agent, AgentAilment } from '../db/types'
+import type { Agent, AgentAilment, Appointment } from '../db/types'
 import { SeverityBadge, StatusBadge } from './Badges'
+import { AppointmentsList } from './AppointmentsList'
 
 export type AgentDetailProps = {
   agent: Agent
   ailments: AgentAilment[]
+  appointments: Appointment[]
 }
 
-export const AgentDetail = ({ agent, ailments }: AgentDetailProps) => (
+export const AgentDetail = ({ agent, ailments, appointments }: AgentDetailProps) => (
   <article>
     <p>
       <a href="/agents">&larr; All agents</a>
@@ -34,10 +36,16 @@ export const AgentDetail = ({ agent, ailments }: AgentDetailProps) => (
               <strong>{ailment.name}</strong> <SeverityBadge severity={ailment.severity} />
             </div>
             <p>{ailment.description}</p>
+            <p class="therapy">
+              Therapy: <strong>{ailment.therapy_name ?? 'Not assigned yet'}</strong>
+            </p>
             <small>Diagnosed {ailment.diagnosed_on}</small>
           </li>
         ))}
       </ul>
     )}
+
+    <h2>Upcoming appointments</h2>
+    <AppointmentsList appointments={appointments} showAgent={false} />
   </article>
 )
