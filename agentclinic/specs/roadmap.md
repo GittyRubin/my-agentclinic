@@ -7,23 +7,16 @@ High-level implementation order, in very small phases. Each phase gets its own f
 - Hono server running with TypeScript.
 - Shared layout: header, navigation, footer, base CSS.
 - Home page that says what AgentClinic is.
+- Vitest tests and responsive design (added during replanning).
 
-## Phase 2 – Agents and ailments
+## Phase 2 – Agents, ailments, therapies, appointments and dashboard
 
-- SQLite database set up.
-- List and view agents.
-- List ailments and link them to agents.
+Combined from the earlier phases 2–5 so the core clinic workflow ships together.
 
-## Phase 3 – Therapies
-
-- List therapies.
-- Assign a therapy to an agent's ailment.
-
-## Phase 4 – Appointments
-
-- Book an appointment for an agent.
-- List upcoming appointments.
-
-## Phase 5 – Dashboard
-
-- One overview page for staff: agents, open ailments, and upcoming appointments.
+- SQLite database set up, with seed data.
+- Agents: list and view agents.
+- Ailments: list ailments and link them to agents.
+- Therapies: list therapies and assign a therapy to an agent's ailment.
+- Appointments: book an appointment for an agent and list upcoming appointments.
+- Dashboard: one overview page for staff – agents, open ailments and upcoming appointments.
+- Every page is responsive and covered by Vitest tests.
