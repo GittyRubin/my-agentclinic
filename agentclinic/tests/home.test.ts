@@ -1,5 +1,7 @@
 import { describe, it, expect } from 'vitest'
-import { app } from '../src/app'
+import { testApp } from './helpers'
+
+const { app } = testApp()
 
 describe('Home page', () => {
   it('returns 200 with HTML', async () => {
@@ -25,6 +27,12 @@ describe('Home page', () => {
     const html = await (await app.request('/')).text()
     expect(html).toContain('href="/static/style.css"')
     expect(html).toContain('name="viewport"')
+  })
+
+  it('has navigation links to agents and ailments', async () => {
+    const html = await (await app.request('/')).text()
+    expect(html).toContain('href="/agents"')
+    expect(html).toContain('href="/ailments"')
   })
 })
 
