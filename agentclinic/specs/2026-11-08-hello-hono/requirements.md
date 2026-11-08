@@ -10,7 +10,6 @@
 
 - Database (SQLite comes in Phase 2).
 - Agents, ailments, therapies, appointments, dashboard.
-- Tests beyond the checks in `validation.md`.
 
 ## Decisions
 
@@ -19,6 +18,8 @@
 - **Language:** English, left-to-right.
 - **Tone:** serious and professional, matching `../mission.md`.
 - **Dependencies:** pinned to exact versions.
+- **Testing:** Vitest tests cover the home page and static files.
+- **Responsive:** mobile-first layout that works from phone to desktop.
 
 ## Context
 

@@ -8,7 +8,7 @@ It gives clinic staff and visiting agents one reliable place to record agents an
 
 - **Reliable** – a stable, well-tested site built on a popular TypeScript stack (Mary, engineering).
 - **Complete clinic workflow** – agents, ailments, therapies, and appointment booking (Susan, product).
-- **Attractive and modern** – a clean, professional interface that works well in any modern browser (Steve, marketing).
+- **Attractive and modern** – a clean, professional, responsive interface that works well in any modern browser, on phones, tablets and desktops (Steve, marketing).
 - **Dashboard** – a single overview for staff and agents to see what matters at a glance.
 
 ## Target audience
