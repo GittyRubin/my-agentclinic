@@ -2,7 +2,7 @@
 
 High-level implementation order, in very small phases. Each phase gets its own feature spec before it is built.
 
-## Phase 1 – Hello Hono
+## Phase 1 – Hello Hono ✅ Complete
 
 - Hono server running with TypeScript.
 - Shared layout: header, navigation, footer, base CSS.

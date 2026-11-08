@@ -1,13 +1,21 @@
 {
   "name": "agentclinic",
   "version": "1.0.0",
-  "description": "",
+  "description": "A clinic management system for AI agents",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
+    "dev": "tsx watch src/index.tsx",
+    "start": "tsx src/index.tsx",
+    "typecheck": "tsc --noEmit",
     "build": "tsc"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@hono/node-server": "2.1.6",
+    "hono": "4.13.17"
+  },
   "devDependencies": {
+    "tsx": "4.23.15",
     "typescript": "^5.5.3"
   },
   "private": true
